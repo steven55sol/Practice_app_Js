@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        min-height: 100vh;
+        background-color: #1d1d1d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        background-color: #fff;
+        width: 300px;
+        border-radius: 10px;
+        padding: 10px;
+
+        & input{
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            font-size: 20px;
+            text-align: end;
+            margin-bottom: 10px;
+        }
+    }
+
+    table{
+        width: 100%;
+        height: 300px;
+        text-align: center;
+    }
+
+    table td{
+        width: 50px;
+        
+        border-collapse: collapse;
+        border-radius:5px;
+        background-color: #335de7;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .select{
+        background-color: #000;
+    }
+
+    .borrar{
+        background-color: #e63d3d;
+    }
+
+</style>
+<body>
+    <main class="container">
+        <input type="text" value="0" disabled="true">
+        <table >
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>%</td>
+                <td class="borrar">C</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>-</td>
+                <td>+</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>x</td>
+                <td>/</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>00</td>
+                <td>.</td>
+                <td colspan="2" class="select">=</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

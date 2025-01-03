@@ -1,0 +1,38 @@
+body{
+    background: #ee0979; 
+    background:-webkit-linear-gradient(to right, #ff6a00, #ee0979); 
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 400px;
+    width: 90%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+span{
+    display: none;
+}
+
+.mostrar{
+    display: block;
+}
+
+.btn-read{
+    padding: 15px 25px;
+    border: none;
+    background-color: #5876fd;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
