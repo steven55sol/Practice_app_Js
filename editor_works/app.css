@@ -16,6 +16,7 @@ body{
     --color-principal: #338cf4;
     --white: #ffffff;
     --black: #000000;
+    --blue-dark: #020929;
 
 }
 
@@ -33,5 +34,24 @@ body{
     top: 50%;
     border-radius: 1rem;
     box-shadow: 0 2.5rem 5rem rgba(7,20,35,0.2);
+}
 
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+button{
+    height: 2.8rem;
+    width: 2.8rem;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    border:none;
+    background-color: var(--white);
+    outline: none;
+    color: var(--blue-dark);
+    
 }
