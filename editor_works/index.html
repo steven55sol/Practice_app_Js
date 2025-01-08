@@ -44,13 +44,57 @@
                 <img src="src/svg/redo.svg" alt="Button redo">
              </button>
              <!-- Button Link -->
-             <button id="createLink" class="option-button">
+             <button id="createLink" class="adv-option-button">
                 <img src="src/svg/link.svg" alt="Button link">
              </button>
              <button id="unLink" class="option-button">
                 <img src="src/svg/unlink.svg" alt="Button link">
              </button>
-        </section>
+             <!-- Alignment -->
+             <button id="justifyLeft" class="option-button align">
+                <img src="src/svg/align-left.svg" alt="Button link">
+             </button>
+             <button id="justifyLeft" class="option-button align">
+                <img src="src/svg/align-center.svg" alt="Button link">
+             </button>
+             <button id="justifyRight" class="option-button align">
+                <img src="src/svg/align-right.svg" alt="Button link">
+             </button>
+             <button id="justifyFull" class="option-button align">
+                <img src="src/svg/align-justify.svg" alt="Button link">
+             </button>
+             <button id="indent" class="option-button spacing">
+                <img src="src/svg/align-indent.svg" alt="Button link">
+             </button>
+             <button id="outdent" class="option-button spacing">
+                <img src="src/svg/align-outdent.svg" alt="Button link">
+             </button>
+
+             <!-- Headings -->
+              <select  id="formatBlock" class="adv-option-button">
+                <option value="H1">H1</option>
+                <option value="H2">H2</option>
+                <option value="H3">H3</option>
+                <option value="H4">H4</option>
+                <option value="H5">H5</option>
+                <option value="H6">H6</option>
+              </select>
+
+              <!-- Fonts -->
+               <select id="fontName" class="adv-option-button"></select>
+               <select id="fontSize" class="adv-option-size"></select>
+
+               <!-- Color -->
+                <div class="wrapper">
+                    <input type="color" id="foreColor" class="adv-option-button"/>
+                    <label for="foreColor">Font Color</label>
+                </div>
+                <div class="input-wrapper">
+                    <input type="color" id="backColor" class="adv-option-button"/>
+                    <label for="backColor">Highlight Color</label>
+                </div>    
+            </section>
+            <div id="text-input" contenteditable="true"></div>
     </div>
     <!-- coding the JavaScript -->
      <script src="app.js"></script>
